@@ -1,4 +1,14 @@
-@use "/_colors.scss";
+$theme-colors: (
+  "primary": #0d1b2a,
+  "primary-light": #415a77,
+  "secondary": #778da9,
+  "dark": #222,
+  "light": #f8fafb,
+  "success": #1f7909,
+  "warning": #d37909,
+  "danger": #dc3003,
+);
+@import "~bootstrap/scss/bootstrap.scss";
 
 body,
 html,
@@ -12,4 +22,8 @@ html,
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.login-box {
+  background-color: map-get($theme-colors, "secondary");
 }
